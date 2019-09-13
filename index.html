@@ -41,9 +41,24 @@
       </nav>
       <div>
         <button type="button">Форма поиска</button>
-        <!-- Форма поиска -->
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <input type="search" name="search" id="search-field" placeholder="Что ищем?">
+          <label class="visually-hidden" for="search-field">Поиск по сайту</label>
+        </form>
         <a href="#">Вход</a>
-        <!-- Форма Входа -->
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <input type="email" name="login" id="user-email" placeholder="Электронная почта">
+            <label class="visually-hidden" for="user-email">Электронная почта</label>
+          </p>
+          <p>
+            <input type="password" name="password" id="user-password" placeholder="Пароль">
+            <label class="visually-hidden" for="user-password">Пароль</label>
+          </p>
+          <button type="submit">Войти</button>
+          <a href="#">Забыли пароль?</a>
+          <a href="#">Новая регистрация</a>
+        </form>
         <a href="#">Пусто</a>
       </div>
       <div>
@@ -52,9 +67,9 @@
       </div>
     </header>
     <main>
-      <h1>Магазин мороженого "Глэйси"</h1>
+      <h1 class="visually-hidden">Магазин мороженого "Глэйси"</h1>
       <section>
-        <h2>Промо товары</h2>
+        <h2 class="visually-hidden">Промо товары</h2>
         <ul>
           <li>
             <h3>Крем-брюле и пломбир с малиновым джемом</h3>
@@ -71,7 +86,7 @@
         </ul>
       </section>
       <section>
-        <h2>Акции</h2>
+        <h2 class="visually-hidden">Акции</h2>
         <div>
          <h3>Малинка даром!</h3>
          <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -84,7 +99,7 @@
         </div>
       </section>
       <section>
-        <h2>Популярные товары</h2>
+        <h2 class="visually-hidden">Популярные товары</h2>
         <ul>
           <li>
             <h3>
@@ -129,7 +144,7 @@
         </ul>
       </section>
       <section>
-        <h2>О магазине</h2>
+        <h2 class="visually-hidden">О магазине</h2>
         <p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
         <ul>
           <li>
@@ -151,13 +166,17 @@
         <a href="#">10 способов сервировки фруктовых щербетов к столу</a>
       </article>
       <section>
-        <h2>Рассылка</h2>
+        <h2 class="visually-hidden">Рассылка</h2>
         <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-        <!-- Форма подписки на рассылку -->
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <input type="email" name="email" id="email-field" placeholder="Электронная почта">
+          <label class="visually-hidden" for="email-field">Электронная почта</label>
+          <button type="submit">Отправить</button>
+        </form>
       </section>
       <section>
-        <h2>Наш адрес</h2>
-        <img src="img/map.jpg" width="1250" height="430" alt="Gllacy на карте">
+        <h2 class="visually-hidden">Наш адрес</h2>
+        <img src="img/map.jpg" width="1250" height="430" alt="Адрес главного офиса: ул. Большая Конюшенная 19/8, Санкт-Петербург">
         <div>
           <p>
             Адрес главного офиса и офлайн-магазина:
@@ -210,5 +229,25 @@
         </p>
       </div>
     </footer>
+    <section>
+      <h2 class="visually-hidden">Форма обратной связи</h2>
+      <p>Мы вам обязательно ответим!</p>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <input type="text" name="name" id="feedback-name" placeholder="Как вас зовут?">
+          <label class="visually-hidden" for="feedback-name">Ваше имя</label>
+        </p>
+        <p>
+          <input type="email" name="email" id="feedback-email" placeholder="Ваша почта для ответа?">
+          <label class="visually-hidden" for="feedback-email">Ваша электронная почта</label>
+        </p>
+        <p>
+          <textarea name="message" id="feedback-message" cols="30" rows="10" placeholder="Напишите что-нибудь..."></textarea>
+          <label class="visually-hidden" for="feedback-message">Ваше сообщение</label>
+        </p>
+        <button type="submit">Отправить</button>
+        <button type="button">Закрыть</button>
+      </form>
+    </section>
   </body>
 </html>
