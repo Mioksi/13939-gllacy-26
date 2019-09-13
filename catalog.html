@@ -18,7 +18,7 @@
                 <a href="#">Новинки</a>
               </li>
               <li>
-                <a href="#">Сливочное</a>
+                <a>Сливочное</a>
               </li>
               <li>
                 <a href="#">Щербеты</a>
@@ -41,9 +41,24 @@
       </nav>
       <div>
         <button type="button">Форма поиска</button>
-        <!-- Форма поиска -->
+        <form action="https://echo.htmlacademy.ru" method="get">
+          <input type="search" name="search" id="search-field" placeholder="Что ищем?">
+          <label class="visually-hidden" for="search-field">Поиск по сайту</label>
+        </form>
         <a href="#">Вход</a>
-        <!-- Форма Входа -->
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <input type="email" name="login" id="user-email" placeholder="Электронная почта">
+            <label class="visually-hidden" for="user-email">Электронная почта</label>
+          </p>
+          <p>
+            <input type="password" name="password" id="user-password" placeholder="Пароль">
+            <label class="visually-hidden" for="user-password">Пароль</label>
+          </p>
+          <button type="submit">Войти</button>
+          <a href="#">Забыли пароль?</a>
+          <a href="#">Новая регистрация</a>
+        </form>
         <div>
           <a href="#">2 товара</a>
           <table>
@@ -73,7 +88,6 @@
           <p>Итого: 750 руб.</p>
           <a href="#">Оформить заказ</a>
         </div>
-        <!-- Товары корзины -->
       </div>
       <div>
         <p>C 10 до 20, ежедневно</p>
@@ -93,9 +107,72 @@
         </li>
       </ul>
       <h1>Сливочное мороженое</h1>
-      <!-- Форма сортировки -->
       <section>
-        <h2>Каталог товаров</h2>
+        <h2 class="visually-hidden">Фильтр каталога</h2>
+        <form action="http://echo.htmlacademy.ru/" method="get">
+          <fieldset>
+            <legend>Сортировка:</legend>
+            <select name="sort-filter">
+              <option value="popularity">по популярности</option>
+              <option value="inexpensive">сначала недорогие</option>
+              <option value="expensive">сначала дорогие</option>
+              <option value="fat">по жирности</option>
+            </select>
+          </fieldset>  
+          <fieldset>
+            <legend>Жирность:</legend>
+            <ul>
+              <li>
+                <input type="radio" name="fat-percent" value="0" id="fat-percent-0">
+                <label for="fat-percent-0">0%</label>
+              </li>
+              <li>
+                <input type="radio" name="fat-percent"  value="up-10" id="fat-percent-10" checked>
+                <label for="fat-percent-10">до 10%</label>
+              </li>
+              <li>
+                <input type="radio" name="fat-percent" value="up-30" id="fat-percent-30">
+                <label for="fat-percent-30">до 30%</label>
+              </li>
+              <li>
+                <input type="radio" name="fat-percent" value="after-30" id="fat-percent-after-30">
+                <label for="fat-percent-after-30">выше 30%</label>
+              </li>
+            </ul>
+          </fieldset>
+          <div>
+            <p>Цена: 100 руб. – 500 руб.</p>
+          </div>
+          <fieldset>
+            <legend>Наполнители:</legend>
+            <ul>
+              <li>
+                <input type="checkbox" name="filler" value="chocolate" id="chocolate" checked>
+                <label for="chocolate">шоколадные</label>
+              </li>
+              <li>
+                <input type="checkbox" name="filler" value="sugar" id="sugar" checked>
+                <label for="sugar">сахарные присыпки</label>
+              </li>
+              <li>
+                <input type="checkbox" name="filler" value="fruits" id="fruits">
+                <label for="fruits">фрукты</label>
+              </li>
+              <li>
+                <input type="checkbox" name="filler" value="syrups" id="syrups">
+                <label for="syrups">сиропы</label>
+              </li>
+              <li>
+                <input type="checkbox" name="filler" value="jams" id="jams">
+                <label for="jams">джемы</label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit">Применить</button>
+        </form>
+      </section>
+      <section>
+        <h2 class="visually-hidden">Каталог товаров</h2>
         <ul>
           <li>
             <h3>
