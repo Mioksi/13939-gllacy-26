@@ -127,7 +127,7 @@
         <form class="filter-form" action="http://echo.htmlacademy.ru/" method="get">
           <fieldset>
             <legend>Сортировка:</legend>
-            <select name="sort-filter">
+            <select class="filter-form-group" name="sort-filter">
               <option value="popularity">по популярности</option>
               <option value="inexpensive">сначала недорогие</option>
               <option value="expensive">сначала дорогие</option>
@@ -136,7 +136,7 @@
           </fieldset>  
           <fieldset>
             <legend>Жирность:</legend>
-            <ul>
+            <ul class="filter-form-group">
               <li>
                 <input type="radio" name="fat-percent" value="0" id="fat-percent-0">
                 <label for="fat-percent-0">0%</label>
@@ -155,12 +155,12 @@
               </li>
             </ul>
           </fieldset>
-          <div>
+          <div class="filter-form-group">
             <p>Цена: 100 руб. – 500 руб.</p>
           </div>
           <fieldset>
             <legend>Наполнители:</legend>
-            <ul>
+            <ul class="filter-form-group">
               <li>
                 <input type="checkbox" name="filler" value="chocolate" id="chocolate" checked>
                 <label for="chocolate">шоколадные</label>
@@ -183,7 +183,7 @@
               </li>
             </ul>
           </fieldset>
-          <button type="submit">Применить</button>
+          <button class="form-button" type="submit">Применить</button>
         </form>
       </section>
       <section class="catalog">
@@ -311,31 +311,31 @@
           </li>
         </ul>
         <ul class="pagination-list">
-          <li class="pagination-item">
-            <a>&#60;</a>
+          <li>
+            <a class="pagination-item-link">&#60;</a>
           </li>
-          <li class="pagination-item">
-            <a>1</a>
+          <li>
+            <a class="pagination-item-link pagination-item-link-current">1</a>
           </li>
-          <li class="pagination-item">
-            <a href="#">2</a>
+          <li>
+            <a class="pagination-item-link" href="#">2</a>
           </li>
-          <li class="pagination-item">
-            <a href="#">3</a>
+          <li>
+            <a class="pagination-item-link" href="#">3</a>
           </li>
-          <li class="pagination-item">
-            <a href="#">4</a>
+          <li>
+            <a class="pagination-item-link" href="#">4</a>
           </li>
-          <li class="pagination-item">
-            <a href="#">5</a>
+          <li>
+            <a class="pagination-item-link" href="#">5</a>
           </li>
-          <li class="pagination-item">
-            <a href="#">&#62;</a>
+          <li>
+            <a class="pagination-item-link" href="#">&#62;</a>
           </li>
         </ul>
       </section>
     </main>
-    <footer>
+    <footer class="main-footer">
       <ul class="footer-social-list">
         <li class="footer-social-item">
           <a href="#">Twitter</a>
