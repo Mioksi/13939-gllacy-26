@@ -8,99 +8,101 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/svg/logo.svg" width="154" height="64" alt="Логотип Gllacy shop»">
-        </a>
-        <ul class="main-navigation-list">
-          <li>
-            <a class="main-navigation-link main-navigation-link-active" href="#">Каталог</a>
-            <ul class="drop-navigation-list">
-              <li> 
-                <a class="drop-navigation-link" href="#">Новинки</a>
-              </li>
-              <li>
-                <a class="drop-navigation-link drop-navigation-link-active">Сливочное</a>
-              </li>
-              <li>
-                <a class="drop-navigation-link" href="#">Щербеты</a>
-              </li>
-              <li>
-                <a class="drop-navigation-link" href="#">Фруктовый лёд</a>
-              </li>
-              <li>
-                <a class="drop-navigation-link" href="#">Мелорин</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <a class="main-navigation-link" href="#">Доставка и оплата</a>
-          </li>
-          <li>
-            <a class="main-navigation-link" href="#">О компании</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="user-navigation">
-        <div class="search">
-          <button class="button-navigation button-navigation-search" type="button">Форма поиска</button>
-          <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
-            <input type="search" name="search" id="search-field" placeholder="Крем-брюле">
-            <label class="visually-hidden" for="search-field">Поиск по сайту</label>
-          </form>
-        </div>
-        <div class="user-login">
-          <a class="button-navigation button-navigation-login" href="#">Вход</a>
-          <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-            <p>
-              <input type="email" name="login" id="user-email" placeholder="email@example.com">
-              <label class="visually-hidden" for="user-email">Электронная почта</label>
-            </p>
-            <p>
-              <input type="password" name="password" id="user-password" placeholder="••••••••">
-              <label class="visually-hidden" for="user-password">Пароль</label>
-            </p>
-            <button type="submit">Войти</button>
-            <a href="#">Забыли пароль?</a>
-            <a href="#">Новая регистрация</a>
-          </form>
-        </div>
-        <div class="basket">
-          <a class="basket-full" href="#">2 товара</a>
-          <div class="basket-wrap">
-            <table>
-              <tr>
-                <td>
-                  <button>Удалить из корзины</button>
-                </td>
-                <td>
-                  <img src="img/catalog/item-small-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
-                </td>
-                <td>
-                  <a href="#">Пломбир с апельсиновым джемом</a>
-                </td>
-                <td>1,5 кг х 200 руб.</td>
-                <td>300 руб.</td>
-              </tr>
-              <tr>
-                <td>
-                  <button>Удалить из корзины</button>
-                </td>
-                <td>
-                  <img src="img/catalog/item-small-2.jpg" width="33" height="33" alt="Клубничны пломбир с присыпкой из белого шоколада">
-                </td>
-                <td>
-                  <a href="#">Клубничный пломбир с присыпкой из белого шоколада</a>
-                </td>
-                <td>1,5 кг х 300 руб.</td>
-                <td>450 руб.</td>
-              </tr>
-              <tr>
-                <td colspan="5">Итого: 750 руб.</td>
-              </tr>
-            </table>
-            <a href="#">Оформить заказ</a>
+    <header class="main-header container">
+      <div class="header-wrapper">
+        <nav class="main-navigation">
+          <a class="main-header-logo" href="index.html">
+            <img src="img/svg/logo.svg" width="154" height="64" alt="Логотип Gllacy shop»">
+          </a>
+          <ul class="main-navigation-list">
+            <li>
+              <a class="main-navigation-link main-navigation-link-active" href="#">Каталог</a>
+              <ul class="drop-navigation-list">
+                <li> 
+                  <a class="drop-navigation-link" href="#">Новинки</a>
+                </li>
+                <li>
+                  <a class="drop-navigation-link drop-navigation-link-active">Сливочное</a>
+                </li>
+                <li>
+                  <a class="drop-navigation-link" href="#">Щербеты</a>
+                </li>
+                <li>
+                  <a class="drop-navigation-link" href="#">Фруктовый лёд</a>
+                </li>
+                <li>
+                  <a class="drop-navigation-link" href="#">Мелорин</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a class="main-navigation-link" href="#">Доставка и оплата</a>
+            </li>
+            <li>
+              <a class="main-navigation-link" href="#">О компании</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-navigation">
+          <div class="search">
+            <button class="button-navigation button-navigation-search" type="button">Форма поиска</button>
+            <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+              <input type="search" name="search" id="search-field" placeholder="Крем-брюле">
+              <label class="visually-hidden" for="search-field">Поиск по сайту</label>
+            </form>
+          </div>
+          <div class="user-login">
+            <a class="button-navigation button-navigation-login" href="#">Вход</a>
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <input type="email" name="login" id="user-email" placeholder="email@example.com">
+                <label class="visually-hidden" for="user-email">Электронная почта</label>
+              </p>
+              <p>
+                <input type="password" name="password" id="user-password" placeholder="••••••••">
+                <label class="visually-hidden" for="user-password">Пароль</label>
+              </p>
+              <button type="submit">Войти</button>
+              <a href="#">Забыли пароль?</a>
+              <a href="#">Новая регистрация</a>
+            </form>
+          </div>
+          <div class="basket">
+            <a class="basket-full" href="#">2 товара</a>
+            <div class="basket-wrap">
+              <table>
+                <tr>
+                  <td>
+                    <button>Удалить из корзины</button>
+                  </td>
+                  <td>
+                    <img src="img/catalog/item-small-1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+                  </td>
+                  <td>
+                    <a href="#">Пломбир с апельсиновым джемом</a>
+                  </td>
+                  <td>1,5 кг х 200 руб.</td>
+                  <td>300 руб.</td>
+                </tr>
+                <tr>
+                  <td>
+                    <button>Удалить из корзины</button>
+                  </td>
+                  <td>
+                    <img src="img/catalog/item-small-2.jpg" width="33" height="33" alt="Клубничны пломбир с присыпкой из белого шоколада">
+                  </td>
+                  <td>
+                    <a href="#">Клубничный пломбир с присыпкой из белого шоколада</a>
+                  </td>
+                  <td>1,5 кг х 300 руб.</td>
+                  <td>450 руб.</td>
+                </tr>
+                <tr>
+                  <td colspan="5">Итого: 750 руб.</td>
+                </tr>
+              </table>
+              <a href="#">Оформить заказ</a>
+            </div>
           </div>
         </div>
       </div>
@@ -109,7 +111,7 @@
         <a href="tel:+78124502525">8 812 450-25-25</a>
       </div>
     </header>
-    <main>
+    <main class="container">
       <ul class="breadcrumbs">
         <li class="breadcrumbs-item">
           <a href="index.html">Главная</a>
@@ -335,7 +337,7 @@
         </ul>
       </section>
     </main>
-    <footer class="main-footer">
+    <footer class="main-footer container">
       <ul class="footer-social-list">
         <li class="footer-social-item">
           <a href="#">Twitter</a>
@@ -355,10 +357,10 @@
           <a href="#">Для поставщиков</a>
         </li>
         <li class="footer-navigation-item">
-          <a href="#">О производстве</a>
+          <a href="#">Наши документы</a>
         </li>
         <li class="footer-navigation-item">
-          <a href="#">Наши документы</a>
+          <a href="#">О производстве</a>
         </li>
         <li class="footer-navigation-item">
           <a href="#">Экологические стандарты</a>
