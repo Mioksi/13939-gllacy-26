@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -225,11 +231,29 @@ a {
   color: #ffffff;
 }
 
+.slider {
+  margin-bottom: 40px;
+  
+  text-align: center;
+}
+
 .slider-list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
+.slider-item:nth-child(2),
+.slider-item:nth-child(3) {
+  display: none;
+}
+
 .slider-item h3 {
+  margin: 0 auto;
+  margin-bottom: 40px;
+  width: 675px;
+  
   font-size: 60px;
   font-weight: 700;
   line-height: 60.35px;
@@ -244,6 +268,9 @@ a {
 }
 
 .promotions {
+  display: flex;
+  justify-content: space-between;
+  
   font-size: 18px;
   font-weight: 700;
   color: #ffffff;
@@ -256,12 +283,16 @@ a {
 }
 
 .promotions-jam {
+  width: 560px;
+  
   background-color: #cc3366;
   background-image: url("../img/raspberry-bg.jpg");
   background-repeat: no-repeat;
 }
 
 .promotions-chocolate {
+  width: 560px;
+  
   background-color: #502d18;
   background-image: url("../img/chocotale-bg.jpg");
   background-repeat: no-repeat;
@@ -382,6 +413,9 @@ a {
 }
 
 .contacts-info {
+  width: 302px;
+  padding: 20px;
+  
   font-size: 14px;
   font-weight: 400;
   color: #323232;
@@ -545,6 +579,11 @@ a {
 }
 
 .filter-form ul {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  
   list-style: none;
 }
 
@@ -594,6 +633,8 @@ a {
 }
 
 .catalog-item {
+  display: flex;
+  flex-direction: column;
   width: 267px;
   margin-right: 26px;
 }
@@ -603,6 +644,8 @@ a {
 }
 
 .catalog-item h3 {
+  order: 1;
+  
   font-size: 16px;
   font-weight: 500;
   line-height: 22px;
@@ -640,6 +683,13 @@ a {
 }
 
 .pagination-list {
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  
   font-weight: 500;
   line-height: 18px;
   
