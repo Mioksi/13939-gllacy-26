@@ -29,21 +29,7 @@ img {
 }
 
 a {
-  position: relative;
-  
   text-decoration: none;
-}
-
-a:before {
-  content: "";
-  
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-
-  display: block;
 }
 
 .container {
@@ -145,7 +131,6 @@ a:before {
 
 .main-navigation-list li {
   position: relative;
-  margin-bottom: 5px;
 }
 
 .main-navigation-link {
@@ -176,7 +161,7 @@ a:before {
 
 .drop-navigation-list {
   position: absolute;
-  top: 36px;
+  top: 30px;
   left: -6px;
   z-index: 1;
   
@@ -323,6 +308,7 @@ a:before {
   position: absolute;
   top: 36px;
   right: 1px;
+  z-index: 1;
   
   display: none;
   padding-top: 20px;
@@ -339,12 +325,11 @@ a:before {
 .search-form input[type="search"] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-top: 8px;
   padding-right: 14px;
-  padding-bottom: 10px;
   padding-left: 14px;
   
   width: 311px;
+  height: 44px;
 }
 
 .user-navigation-search:hover .search-form {
@@ -359,6 +344,7 @@ a:before {
   position: absolute;
   top: 36px;
   right:-1px;
+  z-index: 1;
   
   display: none;
   padding-top: 20px;
@@ -376,12 +362,11 @@ a:before {
 .login-form input[type="password"] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  padding-top: 8px;
   padding-right: 13px;
-  padding-bottom: 10px;
   padding-left: 13px;
 
   width: 241px;
+  height: 44px;
 }
 
 .login-form .input-group {
@@ -532,6 +517,7 @@ a:before {
   position: absolute;
   top: 36px;
   right: 0;
+  z-index: 1;
   
   display: none;
   padding-top: 19px;
@@ -570,7 +556,7 @@ a:before {
 }
 
 .basket-content .item-name {
-  max-width: 220px;
+  width: 220px;
 }
 
 .basket-content .item-quantity,
@@ -894,7 +880,9 @@ a:before {
 
 .post-link span {
   background-color: rgba(255, 255, 255, 0.8);
-  border-bottom: 2px solid #323232;
+  background-image: -o-linear-gradient(bottom, black 2px, transparent 0%);
+  background-image: linear-gradient(to top, black 2px, transparent 0%);
+  background-position-y: 26px;
 }
 
 .post-link:hover,
@@ -906,7 +894,8 @@ a:before {
 .post-link:hover span,
 .post-link:focus span,
 .post-link:active span{
-  border-bottom: 2px solid rgba(235, 77, 55, 0.3);
+  background-image: -o-linear-gradient(bottom, rgba(235, 77, 55, 0.3) 2px, transparent 0%);
+  background-image: linear-gradient(to top, rgba(235, 77, 55, 0.3) 2px, transparent 0%);
 }
 
 .mailing {
@@ -939,11 +928,10 @@ a:before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-right: 8px;
-  padding-top: 10px;
   padding-right: 13px;
-  padding-bottom: 9px;
   padding-left: 13px;
   width: 368px;
+  height: 44px;
   
   font-size: 16px;
   line-height: 24px;
@@ -1025,8 +1013,22 @@ a:before {
 }
 
 .footer-social-button {
+  position: relative;
+  
   display: inline-block;
   vertical-align: top;
+}
+
+.footer-social-button::before {
+  content: "";
+  
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: block;
 }
 
 .footer-social-button svg {
@@ -1329,7 +1331,7 @@ a:before {
   left: -2px;
 }
 
-.catalog-item a {
+.catalog-item-link {
   color: #ffffff;
 
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
@@ -1523,15 +1525,14 @@ a:before {
 
 .feedback-form input[type="text"],
 .feedback-form input[type="email"] {
-  padding-top: 10px;
   padding-right: 15px;
-  padding-bottom: 10px;
   padding-left: 15px;
   
   font-size: 16px;
   line-height: 24px;
   
   width: 267px;
+  height: 44px;
 }
 
 .feedback-form textarea {
