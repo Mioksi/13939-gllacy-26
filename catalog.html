@@ -173,21 +173,21 @@
           </div>
           <fieldset>
             <legend class="filter-form-title">Жирность:</legend>
-            <ul class="filter-form-group filter-form-fat">
-              <li>
-                <input type="radio" name="fat-percent" value="0" id="fat-percent-0">
+            <ul class="filter-form-group filter-fat-list">
+              <li class="filter-fat-item">
+                <input class="visually-hidden filter-input-radio" type="radio" name="fat-percent" value="0" id="fat-percent-0">
                 <label for="fat-percent-0">0%</label>
               </li>
-              <li>
-                <input type="radio" name="fat-percent"  value="up-10" id="fat-percent-10" checked>
+              <li class="filter-fat-item">
+                <input class="visually-hidden filter-input-radio" type="radio" name="fat-percent"  value="up-10" id="fat-percent-10" checked>
                 <label for="fat-percent-10">до 10%</label>
               </li>
-              <li>
-                <input type="radio" name="fat-percent" value="up-30" id="fat-percent-30">
+              <li class="filter-fat-item">
+                <input class="visually-hidden filter-input-radio" type="radio" name="fat-percent" value="up-30" id="fat-percent-30">
                 <label for="fat-percent-30">до 30%</label>
               </li>
-              <li>
-                <input type="radio" name="fat-percent" value="after-30" id="fat-percent-after-30">
+              <li class="filter-fat-item">
+                <input class="visually-hidden filter-input-radio" type="radio" name="fat-percent" value="after-30" id="fat-percent-after-30">
                 <label for="fat-percent-after-30">выше 30%</label>
               </li>
             </ul>
@@ -195,24 +195,24 @@
           <fieldset class="filter-form-filler">
             <legend class="filter-form-title">Наполнители:</legend>
             <ul class="filter-form-group filler-list">
-              <li>
-                <input type="checkbox" name="filler" value="chocolate" id="chocolate" checked>
+              <li class="filler-item">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="filler" value="chocolate" id="chocolate" checked>
                 <label for="chocolate">шоколадные</label>
               </li>
-              <li>
-                <input type="checkbox" name="filler" value="sugar" id="sugar" checked>
+              <li class="filler-item">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="filler" value="sugar" id="sugar" checked>
                 <label for="sugar">сахарные присыпки</label>
               </li>
-              <li>
-                <input type="checkbox" name="filler" value="fruits" id="fruits">
+              <li class="filler-item">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="filler" value="fruits" id="fruits">
                 <label for="fruits">фрукты</label>
               </li>
-              <li>
-                <input type="checkbox" name="filler" value="syrups" id="syrups">
+              <li class="filler-item">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="filler" value="syrups" id="syrups">
                 <label for="syrups">сиропы</label>
               </li>
-              <li>
-                <input type="checkbox" name="filler" value="jams" id="jams">
+              <li class="filler-item">
+                <input class="visually-hidden filter-input-checkbox" type="checkbox" name="filler" value="jams" id="jams">
                 <label for="jams">джемы</label>
               </li>
             </ul>
@@ -369,8 +369,8 @@
           </li>
         </ul>
         <ul class="pagination-list">
-          <li class="pagination-item">
-            <a class="pagination-item-link">
+          <li class="pagination-item pagination-item-arrow">
+            <a class="pagination-item-link-arrow">
               <span class="visually-hidden">Назад</span>
               <svg class="arrow-left" xmlns="http://www.w3.org/2000/svg" width="8" height="12">
                 <path fill="#ffffff" d="M7.237 5.642L1.73.132a.508.508 0 0 0-.717.717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717a.506.506 0 0 0 .715 0l5.51-5.51a.505.505 0 0 0 0-.715z"/>
@@ -392,8 +392,8 @@
           <li class="pagination-item">
             <a class="pagination-item-link" href="#">5</a>
           </li>
-          <li class="pagination-item">
-            <a class="pagination-item-link" href="#">
+          <li class="pagination-item pagination-item-arrow">
+            <a class="pagination-item-link-arrow" href="#">
               <span class="visually-hidden">Вперёд</span>
               <svg class="arrow-right" xmlns="http://www.w3.org/2000/svg" width="8" height="12">
                 <path fill="#ffffff" d="M7.237 5.642L1.73.132a.508.508 0 0 0-.717.717L6.163 6l-5.15 5.15c-.2.198-.2.52 0 .717a.506.506 0 0 0 .715 0l5.51-5.51a.505.505 0 0 0 0-.715z"/>
