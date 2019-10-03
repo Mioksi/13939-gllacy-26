@@ -508,10 +508,8 @@ a {
   left: 16px;
 }
 
-.button-navigation:hover path,
-.button-navigation:hover circle,
-.button-navigation:focus path,
-.button-navigation:focus circle { 
+.button-navigation:hover svg,
+.button-navigation:focus svg { 
   fill: #323232;
 }
 
@@ -541,7 +539,7 @@ a {
   display: none;
   padding-top: 19px;
   padding-right: 15px;
-  padding-bottom: 20px;
+  padding-bottom: 21px;
   padding-left: 15px;
   width: 510px;
 
@@ -561,7 +559,7 @@ a {
 
 .basket-content td {
   padding: 0;
-  padding-bottom: 16px;
+  padding-bottom: 15px;
   
   font-size: 13px;
   font-weight: 400;
@@ -578,6 +576,10 @@ a {
   width: 220px;
 }
 
+.item-name.strawberry-ice-cream {
+  padding-top: 9px;
+}
+
 .basket-content .item-quantity,
 .basket-content .item-total {
   padding-left: 27px;
@@ -590,7 +592,7 @@ a {
 .basket-content .basket-total {
   position: relative;
   
-  padding-top: 20px;
+  padding-top: 18px;
   padding-bottom: 14px;
   
   font-size: 15px;
@@ -603,7 +605,7 @@ a {
   content: "";
 
   position: absolute;
-  top: 5px;
+  top: 3px;
   left: 0;
 
   width: 100%;
@@ -752,9 +754,12 @@ a {
   list-style: none;
 }
 
-.slider-item:nth-child(2),
-.slider-item:nth-child(3) {
+.slider-item {
   display: none;
+}
+
+.slider-item-active {
+  display: block;
 }
 
 .slider-item h3 {
@@ -1498,7 +1503,7 @@ a {
   position: absolute;
   
   width: 20px;
-  height: 23px;
+  height: 22px;
   
   background-image: url(../img/svg/filter-button.svg);
   cursor: pointer;
@@ -1512,6 +1517,10 @@ a {
 .range-controls .toggle-max {
   top: 8px;
   right: 67px;
+}
+
+.range-controls .toggle:hover {
+  transform: scale(1.14);
 }
 
 .filter-form .filter-fat-list {
