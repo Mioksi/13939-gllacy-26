@@ -325,20 +325,21 @@
         <p class="modal-text">Мы обязательно вам ответим!</p>
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
           <p class="modal-input-group">
-            <input class="input-area" type="text" name="name" id="feedback-name" placeholder="Имя Фамилия">
-            <label class="visually-hidden" for="feedback-name">Ваше имя</label>
+            <input class="input-area" type="text" name="feedback-name" id="feedback-name-field" placeholder="Имя Фамилия">
+            <label class="visually-hidden" for="feedback-name-field">Ваше имя</label>
           </p>
           <p class="modal-input-group">
-            <input class="input-area" type="email" name="email" id="feedback-email" placeholder="email@example.com">
-            <label class="visually-hidden" for="feedback-email">Ваша электронная почта</label>
+            <input class="input-area" type="email" name="feedback-email" id="feedback-email-field" placeholder="email@example.com">
+            <label class="visually-hidden" for="feedback-email-field">Ваша электронная почта</label>
           </p>
           <p class="modal-input-group">
-            <textarea class="input-area" name="message" id="feedback-message" cols="45" rows="15" placeholder="В свободной форме"></textarea>
-            <label class="visually-hidden" for="feedback-message">Ваше сообщение</label>
+            <textarea class="input-area" name="feedback-message" id="feedback-message-field" cols="45" rows="15" placeholder="В свободной форме"></textarea>
+            <label class="visually-hidden" for="feedback-message-field">Ваше сообщение</label>
           </p>
           <button class="button modal-button" type="submit">Отправить</button>
         </form>
       </section>
     </div>
+    <script src="js/popup.js"></script>
   </body>
 </html>
