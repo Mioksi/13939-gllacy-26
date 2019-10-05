@@ -1,28 +1,28 @@
-var feedbackLink = document.querySelector(".contacts-button");
+var feedbackLink = document.querySelector('.contacts-button');
 
-var popupOverlay = document.querySelector(".modal-overlay");
-var popupClose = popupOverlay.querySelector(".close-button");
+var popupOverlay = document.querySelector('.modal-overlay');
+var popupClose = popupOverlay.querySelector('.close-button');
 
-var feedbackForm = popupOverlay.querySelector(".feedback-form");
-var feedbackName = feedbackForm.querySelector("[name=feedback-name]");
-var feedbackEmail = feedbackForm.querySelector("[name=feedback-email]");
-var feedbackMessage = feedbackForm.querySelector("[name=feedback-message]");
+var feedbackForm = popupOverlay.querySelector('.feedback-form');
+var feedbackName = feedbackForm.querySelector('[name=feedback-name]');
+var feedbackEmail = feedbackForm.querySelector('[name=feedback-email]');
+var feedbackMessage = feedbackForm.querySelector('[name=feedback-message]');
 
-feedbackLink.addEventListener("click", function (evt) {
+feedbackLink.addEventListener('click', function (evt) {
   evt.preventDefault();
-  popupOverlay.classList.add("modal-show");
+  popupOverlay.classList.add('modal-show');
   feedbackName.focus();
 });
 
-popupClose.addEventListener("click", function (evt) {
+popupClose.addEventListener('click', function (evt) {
   evt.preventDefault();
-  popupOverlay.classList.remove("modal-show");
-  feedbackName.classList.remove("modal-invalid");
-  feedbackEmail.classList.remove("modal-invalid");
-  feedbackMessage.classList.remove("modal-invalid");
+  popupOverlay.classList.remove('modal-show');
+  feedbackName.classList.remove('modal-invalid');
+  feedbackEmail.classList.remove('modal-invalid');
+  feedbackMessage.classList.remove('modal-invalid');
 });
 
-feedbackForm.addEventListener("submit", function (evt) {
+feedbackForm.addEventListener('submit', function (evt) {
   if (!feedbackName.value) {
     evt.preventDefault();
     feedbackName.classList.add('modal-invalid');
@@ -43,14 +43,14 @@ feedbackForm.addEventListener("submit", function (evt) {
   }
 });
 
-window.addEventListener("keydown", function (evt) {
+window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
     evt.preventDefault();
-    if (popupOverlay.classList.contains("modal-show")) {
-      popupOverlay.classList.remove("modal-show");
-      feedbackName.classList.remove("modal-invalid");
-      feedbackEmail.classList.remove("modal-invalid");
-      feedbackMessage.classList.remove("modal-invalid");
+    if (popupOverlay.classList.contains('modal-show')) {
+      popupOverlay.classList.remove('modal-show');
+      feedbackName.classList.remove('modal-invalid');
+      feedbackEmail.classList.remove('modal-invalid');
+      feedbackMessage.classList.remove('modal-invalid');
     }
   }
 });

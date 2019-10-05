@@ -2,9 +2,9 @@ var mapImage = document.querySelector('.contacts-map-image');
 
 ymaps.ready(init);
 function init() {
-  mapImage.classList.add("map-hide");
+  mapImage.classList.add('map-hide');
   
-  var myMap = new ymaps.Map("yandexmap", {
+  var myMap = new ymaps.Map('yandexmap', {
     center: [59.939631, 30.333055],
     zoom: 15
   }),
