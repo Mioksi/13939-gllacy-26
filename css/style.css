@@ -1419,10 +1419,6 @@ a {
   line-height: 18px;
 
   cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 
 .filter-form fieldset {
@@ -1474,6 +1470,10 @@ a {
 
 .filter-form select::-ms-expand{
   display: none;
+}
+
+.filter-form-options option {
+  color: #323232;
 }
 
 .filter-form-sort svg {
