@@ -977,7 +977,9 @@ a {
 
 .post-link {
   display: inline-block;
+  vertical-align: top;
   width: 282px;
+  
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
@@ -1055,6 +1057,10 @@ a {
   border-radius: 22px;
 }
 
+.contacts {
+  height: 430px;
+}
+
 .contacts-map {
   position: relative;
 
@@ -1062,11 +1068,22 @@ a {
   width: 1200px;
 }
 
+.contacts-map-image {
+  display: block;
+  width: 1200px;
+  height: 430px;
+}
+
+.map-hide {
+  display: none;
+}
+
 .contacts-info {
   position: absolute;
 
   top: 62px;
   right: 27px;
+  z-index: 1;
   
   width: 252px;
   padding-top: 28px;
