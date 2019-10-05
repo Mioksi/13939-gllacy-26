@@ -4,18 +4,18 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="catalog-wrapper">
     <header class="main-header container">
       <div class="header-wrapper">
         <nav class="main-navigation">
           <a class="main-header-logo" href="index.html">
-            <img src="img/svg/logo.svg" width="154" height="64" alt="Логотип Gllacy shop»">
+            <img src="img/svg/logo.svg" width="154" height="64" alt="Логотип «Gllacy shop»">
           </a>
           <ul class="main-navigation-list">
-            <li class="main-navigation-item">
+            <li class="main-navigation-item drop-menu">
               <a class="main-navigation-link main-navigation-link-active" href="#">Каталог</a>
               <ul class="drop-navigation-list">
                 <li class="drop-navigation-item">
@@ -132,7 +132,7 @@
       </div>
       <div class="work-info">
         <p>C 10 до 20, ежедневно</p>
-        <a href="tel:+78124502525">8 812 450-25-25</a>
+        <a href="tel:+88124502525">8 812 450-25-25</a>
       </div>
     </header>
     <main class="container">
@@ -162,16 +162,24 @@
             <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10"><path fill="#231f20" d="M5.5 10L0 0h11"/></svg>
           </fieldset>  
           <div class="filter-range">
-            <p class="filter-range-title">Цена: 100 руб. – 500 руб.</p>
+            <p class="filter-range-group">
+              Цена:
+              <input class="filter-price" type="text" name="price-min" id="price-min-field" placeholder="100">
+              <label class="visually-hidden" for="price-min-field">Минимальная цена</label>
+              руб. – 
+              <input class="filter-price" type="text" name="price-max" id="price-max-field" placeholder="500">
+              <label class="visually-hidden" for="price-max-field">Максимальная цена</label>
+              руб.
+            </p>
             <div class="filter-form-group range-controls">
               <div class="scale">
                 <div class="bar"></div>
               </div>
-              <div class="toggle toggle-min"></div>
-              <div class="toggle toggle-max"></div>
+              <button class="toggle toggle-min" type="button"><span class="visually-hidden">Минимальная цена</span></button>
+              <button class="toggle toggle-max" type="button"><span class="visually-hidden">Максимальная цена</span></button>
             </div>
           </div>
-          <fieldset>
+          <fieldset class="filter-fat-group">
             <legend class="filter-form-title">Жирность:</legend>
             <ul class="filter-form-group filter-fat-list">
               <li class="filter-fat-item">

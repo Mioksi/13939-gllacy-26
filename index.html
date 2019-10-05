@@ -4,18 +4,18 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/normalize.min.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header container">
       <div class="header-wrapper">
         <nav class="main-navigation">
           <a class="main-header-logo">
-            <img src="img/svg/logo.svg" width="154" height="64" alt="Логотип Gllacy shop»">
+            <img src="img/svg/logo.svg" width="154" height="64" alt="Логотип «Gllacy shop»">
           </a>
           <ul class="main-navigation-list">
-            <li class="main-navigation-item">
+            <li class="main-navigation-item drop-menu">
               <a class="main-navigation-link" href="#">Каталог</a>
               <ul class="drop-navigation-list">
                 <li class="drop-navigation-item">
@@ -99,7 +99,7 @@
       </div>
       <div class="work-info">
         <p>C 10 до 20, ежедневно</p>
-        <a href="tel:+78124502525">8 812 450-25-25</a>
+        <a href="tel:88124502525">8 812 450-25-25</a>
       </div>
     </header>
     <main>
@@ -132,12 +132,12 @@
         </section>
         <section class="promotions">
           <h2 class="visually-hidden">Акции</h2>
-          <div class="promotions-jam">
+          <div class="promotions-block promotions-jam">
             <h3>Малинка даром!</h3>
             <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
             <a class="button promotions-button" href="#">Хочу варенье!</a>
           </div>
-          <div class="promotions-chocolate">
+          <div class="promotions-block promotions-chocolate">
             <h3>Шоколадки даром!</h3>
             <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
             <a class="button promotions-button" href="#">Хочу шоколадки!</a>
@@ -241,10 +241,10 @@
             <span class="contacts-info-address">ул. Большая Конюшенная 19/8, Санкт-Петербург</span>
             <p class="contacts-info-phone">
               Для заказов по телефону:
-              <a class="number" href="tel:+78124502525">8 812 450-25-25</a>
+              <a class="number" href="tel:88124502525">8 812 450-25-25</a>
               <span class="time">(с 10 до 20 ежедневно)</span>
             </p>
-            <a class="button contacts-button" href="#">Форма обратной связи</a>
+            <a class="button contacts-button" href="writeus.html">Форма обратной связи</a>
           </div>
         </div>
       </section>
@@ -344,8 +344,6 @@
       </section>
     </div>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=5dd7b717-6791-493e-bfca-36f7bec94721&lang=ru_RU"></script>
-    <script src="js/map.js"></script>
-    <script src="js/slider.js"></script>
-    <script src="js/popup.js"></script>
+    <script src="js/script.min.js"></script>
   </body>
 </html>
