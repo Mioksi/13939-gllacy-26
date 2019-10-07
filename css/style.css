@@ -1476,23 +1476,23 @@ a {
   color: #323232;
 }
 
-.filter-form-sort svg {
+.filter-form-sort-wrapper svg {
   position: absolute;
   bottom: 13px;
   right: 14px;
 }
 
-.filter-form-sort path {
+.filter-form-sort-wrapper path {
   fill: #ffffff;
 }
 
-.filter-form-sort:hover .filter-form-options,
-.filter-form-sort:focus .filter-form-options {
+.filter-form-sort-wrapper:hover .filter-form-options,
+.filter-form-sort-wrapper:focus .filter-form-options {
   color: #323232;
 }
 
-.filter-form-sort:hover path,
-.filter-form-sort:focus path {
+.filter-form-sort-wrapper:hover path,
+.filter-form-sort-wrapper:focus path {
   fill: #323232;
 }
 

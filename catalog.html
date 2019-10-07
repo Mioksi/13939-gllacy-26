@@ -153,13 +153,15 @@
         <form class="filter-form" action="http://echo.htmlacademy.ru/" method="get">
           <fieldset class="filter-form-sort">
             <legend class="filter-form-title">Сортировка:</legend>
-            <select class="filter-form-group filter-form-options" name="sort-filter">
-              <option value="popularity">по популярности</option>
-              <option value="inexpensive">сначала недорогие</option>
-              <option value="expensive">сначала дорогие</option>
-              <option value="fat">по жирности</option>
-            </select>
-            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10"><path fill="#231f20" d="M5.5 10L0 0h11"/></svg>
+            <div class="filter-form-sort-wrapper">
+              <select class="filter-form-group filter-form-options" name="sort-filter">
+                <option value="popularity">по популярности</option>
+                <option value="inexpensive">сначала недорогие</option>
+                <option value="expensive">сначала дорогие</option>
+                <option value="fat">по жирности</option>
+              </select>
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10"><path fill="#231f20" d="M5.5 10L0 0h11"/></svg>
+            </div>
           </fieldset>  
           <div class="filter-range">
             <p class="filter-range-group">
